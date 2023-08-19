@@ -4,6 +4,7 @@ import { nanoid } from "nanoid"
 
 const idLength=8
 
+
 router.get("/", (req, res) => {
     const books = req.app.db.data.books;  // Accede a los datos usando req.app.db.data
     res.send(books);
